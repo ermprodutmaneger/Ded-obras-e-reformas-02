@@ -188,6 +188,12 @@ html:not(.fine) .cur{display:none}
 }
 .hero .sub{position:relative;max-width:54ch;font-size:clamp(1rem,1.5vw,1.22rem);line-height:1.65;color:var(--muted)}
 .h-cta{position:relative;display:flex;gap:16px;margin-top:46px;flex-wrap:wrap}
+.h-mail{position:relative;display:inline-flex;align-items:center;gap:9px;margin-top:22px;font-size:14.5px;
+  color:var(--muted);text-decoration:none;transition:color .35s}
+.h-mail svg{flex-shrink:0;color:var(--a1)}
+.h-mail b{font-weight:600;color:var(--txt);border-bottom:1px solid var(--line);transition:border-color .35s}
+.h-mail:hover{color:var(--txt)}
+.h-mail:hover b{border-color:var(--a1)}
 .scroll-hint{
   position:absolute;bottom:34px;left:clamp(20px,5vw,72px);
   display:flex;align-items:center;gap:16px;
@@ -208,41 +214,11 @@ html:not(.fine) .cur{display:none}
 .hint-r{display:flex;align-items:center;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--faint);white-space:nowrap;padding-bottom:10px}
 .hint-r i{width:44px;height:1px;background:var(--grad);display:block;animation:hint 1.6s var(--ease) infinite}
 @keyframes hint{0%,100%{transform:scaleX(.4);opacity:.4}50%{transform:scaleX(1);opacity:1}}
-.scard{
-  position:relative;flex-shrink:0;width:min(660px,86vw);min-height:min(72vh,620px);
-  display:flex;flex-direction:column;overflow:hidden;
-  border:1px solid var(--line);border-radius:30px;
-  background:linear-gradient(165deg,#111119,#0a0a10 60%);
-  padding:clamp(26px,3.2vw,46px);
-  transition:border-color .5s;
-}
-.scard:hover{border-color:rgba(21,33,46,.2)}
-.scard::before{
-  content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .7s;
-  background:radial-gradient(560px circle at var(--mx,50%) var(--my,20%),rgba(139,92,246,.14),transparent 65%);
-}
-.scard:hover::before{opacity:1}
-.si{will-change:transform;display:flex;flex-direction:column;flex:1;height:100%}
-.s-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:clamp(16px,2.4vh,28px)}
-.s-idx{font-size:13px;letter-spacing:.26em;color:var(--faint);font-weight:600;padding-top:14px}
-.s-ico{width:54px;height:54px;border-radius:16px;border:1px solid var(--line);display:grid;place-items:center;background:rgba(21,33,46,.03)}
-.s-vis{position:relative;display:grid;place-items:center;min-height:clamp(160px,24vh,240px);margin-bottom:clamp(14px,2.2vh,26px)}
-.scard h3{font-size:clamp(1.65rem,2.5vw,2.3rem);letter-spacing:-.025em;font-weight:700}
-.scard .desc{color:var(--muted);line-height:1.6;max-width:50ch;font-size:14.5px;margin-top:10px}
-.s-list{list-style:none;margin:20px 0;display:grid;gap:11px}
-.s-list li{display:flex;gap:12px;align-items:center;font-size:14px;color:var(--muted)}
-.s-list svg{flex-shrink:0}
-.s-chips{display:flex;gap:10px;margin-top:auto;padding-top:18px;flex-wrap:wrap}
 .chart{width:100%;max-width:430px;height:auto}
 .v-badge b{display:block;font-size:1.7rem;font-weight:800;letter-spacing:-.03em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .v-badge span{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
 .v-site{width:100%;max-width:400px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0c0c14;box-shadow:0 34px 90px rgba(0,0,0,.55)}
 .v-ig{width:100%;max-width:310px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.scard:hover 
-.scard:hover 
-.scard:hover 
-.scard:hover 
-.scard:hover 
 .ig-badge{
   position:absolute;bottom:6%;right:6%;
   background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:999px;padding:11px 18px;
@@ -308,7 +284,6 @@ html:not(.fine) .cur{display:none}
   .f-grid{grid-template-columns:1fr}
   .hint-r{display:none}
   .scard{min-height:0}
-  .s-vis{min-height:150px}
   .h-cta .btn{width:100%;justify-content:center}
   .f-big{white-space:normal}
   .menu a.big{padding:12px 0}
@@ -450,7 +425,7 @@ html:not(.fine) .cur{display:none}
   <a class="big" href="#processo" style="transition-delay:.29s"><span class="grad-t">Como funciona</span><small>03</small></a>
   <a class="big" href="#contato" style="transition-delay:.36s"><span class="grad-t">Contato</span><small>04</small></a>
   <div class="menu-foot">
-    <a href="/cdn-cgi/l/email-protection#c2a6a7a6ada0b0a3b1a7b0a7a4adb0afa3b182a5afa3abaeeca1adaf"><span class="__cf_email__" data-cfemail="cda9a8a9a2afbfacbea8bfa8aba2bfa0acbe8daaa0aca4a1e3aea2a0">[email&#160;protected]</span></a>
+    <a href="/cdn-cgi/l/email-protection#cbafaeafa4a9b9aab8aeb9aeada4b9a6aab88baca6aaa2a7e5a8a4a6"><span class="__cf_email__" data-cfemail="b0d4d5d4dfd2c2d1c3d5c2d5d6dfc2ddd1c3f0d7ddd1d9dc9ed3dfdd">[email&#160;protected]</span></a>
     <span>São Paulo e Grande São Paulo · CNPJ 22.357.187/0001-18</span>
   </div>
 </div>
@@ -491,6 +466,11 @@ html:not(.fine) .cur{display:none}
       </a>
       <a class="btn btn-g" href="#servicos" data-mag>Ver serviços</a>
     </div>
+
+    <a class="h-mail" href="/cdn-cgi/l/email-protection#80e4e5e4efe2f2e1f3e5f2e5e6eff2ede1f3c0e7ede1e9ecaee3efed" data-rv style="transition-delay:.9s">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+      Prefere e-mail? <b><span class="__cf_email__" data-cfemail="cfabaaaba0adbdaebcaabdaaa9a0bda2aebc8fa8a2aea6a3e1aca0a2">[email&#160;protected]</span></b>
+    </a>
 
     <div class="scroll-hint" data-rv style="transition-delay:1.05s">
       <span class="line"></span> role para explorar
@@ -726,11 +706,11 @@ html:not(.fine) .cur{display:none}
     </p>
     <div class="ct-actions" data-rv style="transition-delay:.4s">
       <a class="btn btn-p ct-big" href="https://wa.me/5511981205424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20os%20servi%C3%A7os%20da%20D%26D%20Obras%20e%20Reformas." target="_blank" rel="noopener" data-mag><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9.3 8.3c-.3 0-.6.1-.8.4-.3.4-.9 1-.9 2.2 0 1.4.9 2.7 1 2.9.2.2 1.8 2.9 4.4 3.9 2.2.9 2.7.7 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3l-2-.9c-.3-.1-.5-.2-.7.1l-.8 1c-.2.2-.3.2-.6.1a6.8 6.8 0 0 1-3.3-3c-.3-.4 0-.5.1-.7l.5-.6c.1-.2.1-.3 0-.5l-.9-2c-.2-.5-.4-.6-.6-.6h-1Z" fill="currentColor"/></svg> Pedir orçamento no WhatsApp</a>
-      <a class="btn btn-g" href="/cdn-cgi/l/email-protection#086c6d6c676a7a697b6d7a6d6e677a65697b486f65696164266b6765" data-mag>Mandar e-mail</a>
+      <a class="btn btn-g" href="/cdn-cgi/l/email-protection#711514151e13031002140314171e031c100231161c10181d5f121e1c" data-mag>Mandar e-mail</a>
     </div>
     <div class="ct-cards" data-rv style="transition-delay:.5s">
       <div class="ct-card"><span class="ct-l">WhatsApp</span><a href="https://wa.me/5511981205424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20os%20servi%C3%A7os%20da%20D%26D%20Obras%20e%20Reformas." target="_blank" rel="noopener">(11) 98120-5424</a></div>
-      <div class="ct-card"><span class="ct-l">E-mail</span><a href="/cdn-cgi/l/email-protection#94f0f1f0fbf6e6f5e7f1e6f1f2fbe6f9f5e7d4f3f9f5fdf8baf7fbf9"><span class="__cf_email__" data-cfemail="99fdfcfdf6fbebf8eafcebfcfff6ebf4f8ead9fef4f8f0f5b7faf6f4">[email&#160;protected]</span></a></div>
+      <div class="ct-card"><span class="ct-l">E-mail</span><a href="/cdn-cgi/l/email-protection#ddb9b8b9b2bfafbcaeb8afb8bbb2afb0bcae9dbab0bcb4b1f3beb2b0"><span class="__cf_email__" data-cfemail="dcb8b9b8b3beaebdafb9aeb9bab3aeb1bdaf9cbbb1bdb5b0f2bfb3b1">[email&#160;protected]</span></a></div>
       <div class="ct-card"><span class="ct-l">Atendimento</span><span class="ct-v">São Paulo e Grande SP</span></div>
       <div class="ct-card"><span class="ct-l">Responsável</span><span class="ct-v">Ednaldo Pereira</span></div>
     </div>
@@ -754,7 +734,7 @@ html:not(.fine) .cur{display:none}
       <div class="f-col" data-rv style="transition-delay:.16s">
         <h4>Contato</h4>
         <a href="https://wa.me/5511981205424?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20os%20servi%C3%A7os%20da%20D%26D%20Obras%20e%20Reformas." target="_blank" rel="noopener">WhatsApp (11) 98120-5424</a>
-        <a href="/cdn-cgi/l/email-protection#2642434249445447554354434049544b475566414b474f4a0845494b"><span class="__cf_email__" data-cfemail="abcfcecfc4c9d9cad8ced9cecdc4d9c6cad8ebccc6cac2c785c8c4c6">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#127677767d70607361776077747d607f736152757f737b7e3c717d7f"><span class="__cf_email__" data-cfemail="8befeeefe4e9f9eaf8eef9eeede4f9e6eaf8cbece6eae2e7a5e8e4e6">[email&#160;protected]</span></a>
         <span class="f-t">São Paulo e Grande SP</span>
         <span class="f-t">CNPJ 22.357.187/0001-18</span>
       </div>
@@ -1032,5 +1012,5 @@ addEventListener("load",measure);
 })();
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3fe2abd4f1e1cf1',t:'MTc5MDIxNDkyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3fe3d595d2c1cf1',t:'MTc5MDIxNTY4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
